@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <nav class="menuP">
+        <ul>
+            <li class="menuP_item">
+                <a href="../../index.html">Inicio</a>
+            </li>
+
+            <li class="menuP_item">
+                <a href="../../pages/API/index.html">API</a>
+            </li>
+
+            <li class="menuP_item">
+                <a href="../../pages/calculadoraFINAL/calculadora-js-main/index.html">Calculadora</a>
+            </li>     
+
+            <li class="menuP_item active">
+                <a href="./index.html">Juego</a>
+            </li>             
+        </ul>
+    </nav>   
+
+
+    <header>
+        <h1>BIENVENIDOS AL JUEGO PIEDRA, PAPEL O TIJERA</h1>
+        <br>
+        <div class="imagen"><img src="./img/logo.png" alt=""></div>
+        <p><b> 🔥Auspiciado por Doranger la mejor pagina web🔥</b></p>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            <b>El primero en llegar a 5 puntos gana😎.</b>
+            <br>
+            <br>
+            <b>OJO NO HAGAS TRAMPA😑</b>
+        </p>
+        <div class="marcador">
+            <span id="estadisticas"></span>
+            <p class="nombre nombre-jugador">Jugador👦🏻</p>
+            <p class="nombre nombre-computadora">Computadora🖥️</p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+        <div class="elegi-tu-arma" id="elegi-tu-arma">
+            <h2> <b> Elige tu poderosa arma para el próximo turno 🔫😎</b></h2>
+            <div class="armas">
+                <button class="arma" id="piedra👊🏻"><h1 class="emojis">👊🏻</h1></button>
+                <button class="arma" id="papel🖐🏻"><h1 class="emojis">🖐🏻</h1></button>
+                <button class="arma" id="tijera✌🏻"><h1 class="emojis">✌🏻</h1></button>
+            </div>
+        </div>
+        <div class="mensaje disabled" id="mensaje">
+            <p>
+                Usaste <span class="eleccion" id="eleccion-usuario">papel🖐🏻</span><br>
+                y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra👊🏻</span>
+            </p>
+            <p id="gana-punto">¡Ganaste un punto! 🎊😎🔥
+            <img src="./img/celebration.gif" alt="Ganaste un punto" />
+            <img src="./img/buuuuu.gif" alt="Ganaste un punto" />
+            <img src="./img/injusticia.gif" alt="Ganaste un punto" />
+
+            </p>
+        </div>
+       
+        <button class="btn disabled" id="reiniciar">Reiniciar juego</button>
+        <button class="btn disabled" id="salir" >Estadistica del juego</button>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

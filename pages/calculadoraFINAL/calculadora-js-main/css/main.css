@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.supercontainer {
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../img/numeros-animados-de-colores.gif);
+    padding: 1rem;
+}
+
+ul{
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Carlito', sans-serif;
+
+    }
+
+
+
+.menuP ul{
+    display: flex;
+    list-style-type: none;
+    background-color:rgb(2, 2, 8);
+    justify-content:space-around;
+    padding: 15px;
+    
+
+}
+
+
+.menuP_item{
+    display:inline-block
+    
+}
+
+.menuP_item a{
+    padding: 7px 35px 7px 35px ;
+    color:white;
+    margin-inline: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Carlito', sans-serif;
+
+
+}
+
+.menuP_item.active a{
+    border-radius: 50px;
+    background-color:tomato;
+    
+}
+
+.menuP_item a:hover{
+    background-color:rgb(3, 3, 21);
+    color:lightblue;
+    transition: .5s;
+}
+
+.calculadora {
+    background-color: #6e72c7;
+    color: rgb(12, 12, 12);
+    border: 5px solid rgb(67, 7, 231);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    background: linear-gradient(blue, pink);
+   
+   
+    
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #e4e9e8;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-image: url(../img/pantalla.png);
+}
+
+  
+
+.btn {
+    height: 60px;
+    width: 60px;
+    border: 30;
+    border-radius: 30px;
+    border-color: rgb(0, 255, 157);
+    margin: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    
+
+}
+
+.btn:hover {
+    background-color: #40425c;
+}
+
+
+
+#igual {
+    
+    background-color: #1a3d9c;
+}
+
+#igual:hover {
+    background-color: #1fc6f0;
+}
+
+.titulo {
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Sigmar', cursive;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #23ecc4, #3d66ff);
+    font-size: 80px;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.p {
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Sigmar', cursive;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 1rem;
+
+}
+
+
+
+.container {
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+
+
+.container img{
+    width: 50%;
+}
